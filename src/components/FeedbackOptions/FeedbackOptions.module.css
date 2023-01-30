@@ -1,0 +1,22 @@
+.button_state {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.button{
+  width: calc(1/20*100% - 10px);
+  margin: 5px;
+  padding: 5px 2px;
+  color: black;
+  background-color: beige;
+  border: 1px solid lightgray;
+  text-transform: capitalize;
+}
+
+.button:hover {
+  box-shadow: 1px 2px lightgrey;
+}
+.button:active {
+  box-shadow: 1px 2px grey;
+}
