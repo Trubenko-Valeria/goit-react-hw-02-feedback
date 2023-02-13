@@ -27,7 +27,7 @@ class App extends Component {
     // if (isNaN(rez)) {
     //   return 0;
     // } else return rez.toFixed(0);
-    return rez;
+    return rez.toFixed(2);
   };
 
   render() {
@@ -35,7 +35,7 @@ class App extends Component {
     const rezult = good + neutral + bad;
 
     return (
-      <Fragment>
+      <>
         <Section title={'Please leave feedback'}>
           <FeedbackOptions
             options={Object.keys(this.state)}
@@ -59,7 +59,7 @@ class App extends Component {
             />
           )}
         </Section>
-      </Fragment>
+      </>
     );
   }
 }
